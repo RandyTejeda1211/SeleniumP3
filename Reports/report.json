@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 1,
-    "start": "2026-04-01T19:36:30.654Z",
-    "end": "2026-04-01T19:36:35.627Z",
-    "duration": 4973,
+    "start": "2026-04-01T20:00:39.912Z",
+    "end": "2026-04-01T20:00:45.051Z",
+    "duration": 5139,
     "testsRegistered": 3,
     "passPercent": 66.66666666666666,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "1d6be49e-cb2f-4028-b5be-42c025dc52e0",
+      "uuid": "e71b063d-ea0a-42d3-99f5-e68220bd33a7",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "55ce4ce8-2381-4856-b891-8409a3c11da6",
+          "uuid": "cdfb78a5-8156-460c-9f83-9d22b6701e12",
           "title": "CRUD Tests",
           "fullFile": "D:\\Usuario\\Documents\\Tareas\\C7\\P3\\Proyecto4\\tests\\crud.test.js",
           "file": "\\tests\\crud.test.js",
@@ -36,7 +36,7 @@
               "title": "\"before each\" hook in \"CRUD Tests\"",
               "fullTitle": "CRUD Tests \"before each\" hook in \"CRUD Tests\"",
               "timedOut": false,
-              "duration": 659,
+              "duration": 668,
               "state": null,
               "speed": null,
               "pass": false,
@@ -45,8 +45,8 @@
               "context": null,
               "code": "driver = await createDriver();\nawait driver.get(\"http://127.0.0.1:3000/Frontend/Dashboard.html\");",
               "err": {},
-              "uuid": "7798b9e5-5618-470e-9b9e-3337b462bf33",
-              "parentUUID": "55ce4ce8-2381-4856-b891-8409a3c11da6",
+              "uuid": "01a6a6e7-02ab-4c09-85ce-bffdb6a7382f",
+              "parentUUID": "cdfb78a5-8156-460c-9f83-9d22b6701e12",
               "isHook": true,
               "skipped": false
             }
@@ -56,7 +56,7 @@
               "title": "\"after each\" hook in \"CRUD Tests\"",
               "fullTitle": "CRUD Tests \"after each\" hook in \"CRUD Tests\"",
               "timedOut": false,
-              "duration": 36,
+              "duration": 37,
               "state": null,
               "speed": null,
               "pass": false,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "50c885b2-4944-404c-b9e0-d9ac65fd8d28",
-              "parentUUID": "55ce4ce8-2381-4856-b891-8409a3c11da6",
+              "uuid": "cb386c78-5831-4366-a6cb-cb567d179da5",
+              "parentUUID": "cdfb78a5-8156-460c-9f83-9d22b6701e12",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "Crear producto",
               "fullTitle": "CRUD Tests Crear producto",
               "timedOut": false,
-              "duration": 186,
+              "duration": 207,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -85,26 +85,26 @@
               "context": null,
               "code": "await driver.findElement(By.id(\"name\")).sendKeys(\"Laptop\");\nawait driver.findElement(By.id(\"price\")).sendKeys(\"1000\");\nawait driver.findElement(By.tagName(\"button\")).click();\n await takeScreenshot(driver, \"crear_producto\");",
               "err": {},
-              "uuid": "edba2095-f104-4d17-8fb5-26bc7a932084",
-              "parentUUID": "55ce4ce8-2381-4856-b891-8409a3c11da6",
+              "uuid": "705cee74-e7d7-4ca8-9a11-7be88101d985",
+              "parentUUID": "cdfb78a5-8156-460c-9f83-9d22b6701e12",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "edba2095-f104-4d17-8fb5-26bc7a932084"
+            "705cee74-e7d7-4ca8-9a11-7be88101d985"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 186,
+          "duration": 207,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
         },
         {
-          "uuid": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+          "uuid": "778e5f23-e113-4708-8325-4b25e88f1f60",
           "title": "Login Tests",
           "fullFile": "D:\\Usuario\\Documents\\Tareas\\C7\\P3\\Proyecto4\\tests\\login.test.js",
           "file": "\\tests\\login.test.js",
@@ -113,7 +113,7 @@
               "title": "\"before each\" hook in \"Login Tests\"",
               "fullTitle": "Login Tests \"before each\" hook in \"Login Tests\"",
               "timedOut": false,
-              "duration": 604,
+              "duration": 634,
               "state": null,
               "speed": null,
               "pass": false,
@@ -122,8 +122,8 @@
               "context": null,
               "code": "driver = await createDriver();",
               "err": {},
-              "uuid": "18ccb3c3-e1bb-4686-9eeb-7bc95318253a",
-              "parentUUID": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+              "uuid": "a18e995b-eee3-4737-a9df-8e13db8849d5",
+              "parentUUID": "778e5f23-e113-4708-8325-4b25e88f1f60",
               "isHook": true,
               "skipped": false
             }
@@ -133,7 +133,7 @@
               "title": "\"after each\" hook in \"Login Tests\"",
               "fullTitle": "Login Tests \"after each\" hook in \"Login Tests\"",
               "timedOut": false,
-              "duration": 34,
+              "duration": 32,
               "state": null,
               "speed": null,
               "pass": false,
@@ -142,8 +142,8 @@
               "context": null,
               "code": "await driver.quit();",
               "err": {},
-              "uuid": "aa9ffa0d-5bcd-4db0-9063-c5b81e4fe395",
-              "parentUUID": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+              "uuid": "82231807-a1e9-470c-ba84-f55940442d38",
+              "parentUUID": "778e5f23-e113-4708-8325-4b25e88f1f60",
               "isHook": true,
               "skipped": false
             }
@@ -153,7 +153,7 @@
               "title": "Login exitoso (happy path)",
               "fullTitle": "Login Tests Login exitoso (happy path)",
               "timedOut": false,
-              "duration": 258,
+              "duration": 251,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -162,8 +162,8 @@
               "context": null,
               "code": "await driver.get(\"http://127.0.0.1:3000/Frontend/index.html\");\nawait driver.findElement(By.id(\"username\")).sendKeys(\"admin\");\nawait driver.findElement(By.id(\"password\")).sendKeys(\"1234\");\nawait driver.findElement(By.tagName(\"button\")).click();\n\n await takeScreenshot(driver, \"login_exitoso\");\nawait driver.wait(until.urlContains(\"dashboard\"), 5000);",
               "err": {},
-              "uuid": "d3fd0175-9ce9-4dea-a651-9d2a933b04c8",
-              "parentUUID": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+              "uuid": "d18204d8-a495-48cb-a04b-164a13e3d167",
+              "parentUUID": "778e5f23-e113-4708-8325-4b25e88f1f60",
               "isHook": false,
               "skipped": false
             },
@@ -171,7 +171,7 @@
               "title": "Login inválido (negativo)",
               "fullTitle": "Login Tests Login inválido (negativo)",
               "timedOut": false,
-              "duration": 2614,
+              "duration": 2626,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -184,22 +184,22 @@
                 "estack": "WebDriverError: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=146.0.7680.165)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:523:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:526:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:458:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:745:17)\n    at async Context.<anonymous> (tests\\login.test.js:30:5)",
                 "diff": null
               },
-              "uuid": "f4490d7d-6f8e-4dc6-b31a-2d6fa122cfeb",
-              "parentUUID": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+              "uuid": "c726a666-9c5d-4d0e-ab0b-51f066bee284",
+              "parentUUID": "778e5f23-e113-4708-8325-4b25e88f1f60",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d3fd0175-9ce9-4dea-a651-9d2a933b04c8"
+            "d18204d8-a495-48cb-a04b-164a13e3d167"
           ],
           "failures": [
-            "f4490d7d-6f8e-4dc6-b31a-2d6fa122cfeb"
+            "c726a666-9c5d-4d0e-ab0b-51f066bee284"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 2872,
+          "duration": 2877,
           "root": false,
           "rootEmpty": false,
           "_timeout": 10000
