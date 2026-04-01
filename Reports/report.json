@@ -1,0 +1,242 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2026-04-01T19:36:30.654Z",
+    "end": "2026-04-01T19:36:35.627Z",
+    "duration": 4973,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1d6be49e-cb2f-4028-b5be-42c025dc52e0",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "55ce4ce8-2381-4856-b891-8409a3c11da6",
+          "title": "CRUD Tests",
+          "fullFile": "D:\\Usuario\\Documents\\Tareas\\C7\\P3\\Proyecto4\\tests\\crud.test.js",
+          "file": "\\tests\\crud.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"CRUD Tests\"",
+              "fullTitle": "CRUD Tests \"before each\" hook in \"CRUD Tests\"",
+              "timedOut": false,
+              "duration": 659,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await createDriver();\nawait driver.get(\"http://127.0.0.1:3000/Frontend/Dashboard.html\");",
+              "err": {},
+              "uuid": "7798b9e5-5618-470e-9b9e-3337b462bf33",
+              "parentUUID": "55ce4ce8-2381-4856-b891-8409a3c11da6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"CRUD Tests\"",
+              "fullTitle": "CRUD Tests \"after each\" hook in \"CRUD Tests\"",
+              "timedOut": false,
+              "duration": 36,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "50c885b2-4944-404c-b9e0-d9ac65fd8d28",
+              "parentUUID": "55ce4ce8-2381-4856-b891-8409a3c11da6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Crear producto",
+              "fullTitle": "CRUD Tests Crear producto",
+              "timedOut": false,
+              "duration": 186,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.findElement(By.id(\"name\")).sendKeys(\"Laptop\");\nawait driver.findElement(By.id(\"price\")).sendKeys(\"1000\");\nawait driver.findElement(By.tagName(\"button\")).click();\n await takeScreenshot(driver, \"crear_producto\");",
+              "err": {},
+              "uuid": "edba2095-f104-4d17-8fb5-26bc7a932084",
+              "parentUUID": "55ce4ce8-2381-4856-b891-8409a3c11da6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "edba2095-f104-4d17-8fb5-26bc7a932084"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 186,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+          "title": "Login Tests",
+          "fullFile": "D:\\Usuario\\Documents\\Tareas\\C7\\P3\\Proyecto4\\tests\\login.test.js",
+          "file": "\\tests\\login.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Login Tests\"",
+              "fullTitle": "Login Tests \"before each\" hook in \"Login Tests\"",
+              "timedOut": false,
+              "duration": 604,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await createDriver();",
+              "err": {},
+              "uuid": "18ccb3c3-e1bb-4686-9eeb-7bc95318253a",
+              "parentUUID": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Login Tests\"",
+              "fullTitle": "Login Tests \"after each\" hook in \"Login Tests\"",
+              "timedOut": false,
+              "duration": 34,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "aa9ffa0d-5bcd-4db0-9063-c5b81e4fe395",
+              "parentUUID": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Login exitoso (happy path)",
+              "fullTitle": "Login Tests Login exitoso (happy path)",
+              "timedOut": false,
+              "duration": 258,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://127.0.0.1:3000/Frontend/index.html\");\nawait driver.findElement(By.id(\"username\")).sendKeys(\"admin\");\nawait driver.findElement(By.id(\"password\")).sendKeys(\"1234\");\nawait driver.findElement(By.tagName(\"button\")).click();\n\n await takeScreenshot(driver, \"login_exitoso\");\nawait driver.wait(until.urlContains(\"dashboard\"), 5000);",
+              "err": {},
+              "uuid": "d3fd0175-9ce9-4dea-a651-9d2a933b04c8",
+              "parentUUID": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login inválido (negativo)",
+              "fullTitle": "Login Tests Login inválido (negativo)",
+              "timedOut": false,
+              "duration": 2614,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:5500/index.html\");\nawait driver.findElement(By.id(\"username\")).sendKeys(\"wrong\");\nawait driver.findElement(By.id(\"password\")).sendKeys(\"wrong\");\nawait driver.findElement(By.tagName(\"button\")).click();\nconst error = await driver.findElement(By.id(\"error\")).getText();\nassert.strictEqual(error, \"Credenciales inválidas\");",
+              "err": {
+                "message": "WebDriverError: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=146.0.7680.165)",
+                "estack": "WebDriverError: unknown error: net::ERR_CONNECTION_REFUSED\n  (Session info: chrome=146.0.7680.165)\n    at Object.throwDecodedError (node_modules\\selenium-webdriver\\lib\\error.js:523:15)\n    at parseHttpResponse (node_modules\\selenium-webdriver\\lib\\http.js:526:13)\n    at Executor.execute (node_modules\\selenium-webdriver\\lib\\http.js:458:28)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async Driver.execute (node_modules\\selenium-webdriver\\lib\\webdriver.js:745:17)\n    at async Context.<anonymous> (tests\\login.test.js:30:5)",
+                "diff": null
+              },
+              "uuid": "f4490d7d-6f8e-4dc6-b31a-2d6fa122cfeb",
+              "parentUUID": "7e72c961-3e48-4792-9565-9e725c05f8d6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d3fd0175-9ce9-4dea-a651-9d2a933b04c8"
+          ],
+          "failures": [
+            "f4490d7d-6f8e-4dc6-b31a-2d6fa122cfeb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2872,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.7.5"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "reportFilename": "report"
+      },
+      "version": "6.3.2"
+    }
+  }
+}
